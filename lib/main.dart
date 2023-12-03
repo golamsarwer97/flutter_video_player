@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import './screens/home_page.dart';
+import './screens/details_page.dart';
 
 import './helper/init.dart' as di;
 import './controller/api_controller.dart';
@@ -31,9 +32,11 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
               useMaterial3: true,
             ),
+            // home: const HomePage(),
             home: const HomePage(),
             routes: {
               HomePage.routeName: (context) => const HomePage(),
+              DetailsPage.routeName: (context) => const DetailsPage(),
             },
           );
         });
